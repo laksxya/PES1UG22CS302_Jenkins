@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:14'
-        }
-    }
+    agent any
     stages {
         stage('Clone repository') {
             steps {
